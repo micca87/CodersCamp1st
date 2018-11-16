@@ -1,44 +1,44 @@
-/* skasować!! To tylko przywitanie*/
+/*
 
-body { 
-background: #f6d1c7;
+a) Nadaj wszystkim tekstom na stronie czcionkę Arial
+
+f) Sekcje "Ankieta"  i "Moje ulubione warzywa" powinny mieć marginesy górny i dolny ustawiony na 50px, a lewy i prawy na 600px
+g) Odnośniki powinny mieć kolor  #560778 oraz powinny być przekreślone poziomą linią 
+*/
+body
+{
+	
+	background-color: #e6b7fb;
+	font-family: Arial;
 }
-.left { float: left;}
-.right { float: right;}
-#smile {
-  position: relative;
-  z-index: 0;
-  background-color: yellow;
-  border: 6px solid #222;
-  width: 150px;
-  height: 150px;
-  border-radius: 100px;
-  margin: 50px auto;
-  box-shadow: 2px 2px 1px #B8B8B8;
+
+.name
+{
+	text-align: center;
+	
 }
-.eye {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  border-radius: 100px;
-  background: #222;
-  margin-top: 35px;
-  margin-left: 33px;
+
+.social
+{
+	test-align: center;
+	color: #560778;
+	text-decoration: line-through;
 }
-.eye.right { margin-left: 0; margin-right: 33px; }
-.mouth {
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  left: 0;
-  right: 0;
-  height: 110px;
-  width: 115px;
-  margin: 0 auto;
-  border-bottom: 8px solid #222;
-  border-radius: 100%;
+
+.me
+{
+	margin: 50px 100px 20px 400px;
+	text-align: center;
+}	
+
+.ankieta
+{
+	margin: 50px 600px 50px 600px;
+	
 }
-h1 {
-color: black;
-text-align: center;
+
+.img
+{
+	width:10%;
+	border-radius:100%;
 }

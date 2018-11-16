@@ -1,21 +1,85 @@
+
 <!DOCTYPE HTML>
-
 <html lang="pl">
-<head>
-    <link rel="Stylesheet" type="text/css" href="style.css" />
-    <meta charset="utf-8"/>
-    <title>CodersCamp 2018</title>
-    <meta name="description" content="Przed Tobą strona wizytówa jednego z zespołów :) "/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-</head>   
-<body>
-<!– skasować do /body –>
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- tego mi brakło -->
+    <title>Moja pierwsza strona</title>
+      
+  </head>
+  <body>
+    <div class="name">
+		<h1>Michał Kuca</h1>
+		<img class="img" src="http://images.media-allrecipes.com/userphotos/960x960/3875383.jpg" alt="out of order">
+	</div>
+	
+	<hr>
+	
+	<div class="me">
+		<h2 >O mnie
+		</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</p>
+	</div>
+	
+	<hr>
+	
+	<div class="ankieta">
+		<h2 >Ankieta</h2>
+		<form >
+		
+		<input type="text" name="nick" list="pseudo" value="Twój nick"><!--placeholder alternatywa-->
+		<label for="nick" ></label>
+		
+		<datalist id="pseudo">
+			<option value="Bam"/>
+			<option value="Tot"/>
+			<option value="Bak"/>
+		</datalist>
+		<br>
+			<input type="radio" name="nazwa" value="female" id="P"/><!--name="" robi za id?-->
+			<label for="female">Kobieta</label><br>
+			<input type="radio" name="nazwa" value="male" id="P"/>
+			<label for="male">Mężczyzna</label><br><!--label? po co-->
+		
+		<h3>Jakie owoce lubisz?</h3>
+		
+			<input type="checkbox" name="jabłko" value="wartość" />Jabłko<br>
+			<input type="checkbox" name="wiśnia" value="wartość" />Wiśnia<br>
+			<input type="checkbox" name="brzoskwinia" value="wartość" />Brzoskwinia<br>
+			<input type="checkbox" name="mango" value="wartość" />Mango<br>
+		
+		<button type="submit" name="..." value="...">Wyślij</button>
+		</form>
+	</div>
 
-    <h1>Tutaj będzie nasza strona wiztówka. Team Bears do dzieła! </h1>
-       <div id="smile">
-        <div class="eye left"></div>
-        <div class="eye right"></div>
-        <div class="mouth"></div>
-       </div>
-</body>
+	<hr>
+	
+	<div class="ankieta">
+		<h2>Moje ulubione warzywa</h2>
+		<ol>
+		<li>Marchew</li>
+		<li>Pomidor</li>
+		<li>Sałata</li>
+		<li>Papryka</li>
+			<ul>
+			<li>Czerwona</li>
+			<li>Żółta</li>
+			<li>Zielona</li>
+			</ul>
+		<li>Ogórek</li>
+		</ol>
+	</div>
+	
+	<hr>
+	
+	<div class="social">
+	<a href="http://facebook.com" target="_blank">Facebook</a>
+	<a href="http://instagram.com" target="_blank">Instagram</a>
+	<a href="http://snapchat.com">Snapchat</a>
+	</div>
+	
+  </body>
 </html>
