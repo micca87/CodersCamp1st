@@ -1,44 +1,137 @@
-/*
-
-a) Nadaj wszystkim tekstom na stronie czcionkę Arial
-
-f) Sekcje "Ankieta"  i "Moje ulubione warzywa" powinny mieć marginesy górny i dolny ustawiony na 50px, a lewy i prawy na 600px
-g) Odnośniki powinny mieć kolor  #560778 oraz powinny być przekreślone poziomą linią 
-*/
 body
 {
-	
-	background-color: #e6b7fb;
-	font-family: Arial;
+	background-color: #000000;
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	width:100%;
 }
 
-.name
+#our 
 {
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: #000000;
+	color: #ff5a00;
+	font-size:2em;
+	padding-bottom:2%;
+}
+
+#team
+{
+	height:auto;
+	width: 100%;
+	background-color: #000000;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	flex-align: center;
+}
+
+p
+{
+	content-direction: row;
+}
+
+#team p, h3
+{
+	padding-top: 10%;
+	padding-bottom:5%;
+}
+
+img
+{
+	height:auto;
+	width: 100%;
+	
+}
+
+.member:hover
+{
+	transform: scale(1.1) ;
+	opacity:0.7;
+	
+}
+
+.member
+{
+	width: 25%;
+	height: auto;
+	background-color: #222222;
+	margin-bottom: 2%;
+	margin-left: 2%;
+	color:white;
+	font-size:1em;
 	text-align: center;
-	
+	transition: transform 300ms ease-in-out;
 }
 
-.social
+.memberlink
 {
-	test-align: center;
-	color: #560778;
-	text-decoration: line-through;
-}
-
-.me
-{
-	margin: 50px 100px 20px 400px;
+	color: white;
+	font-size:1em;
+	background-color: #ff5a00;
+	text-decoration:none;
 	text-align: center;
-}	
-
-.ankieta
-{
-	margin: 50px 600px 50px 600px;
-	
+	justify-content:center;
+	display: block;
+	width: 35%;
+	height: 45%;
+	margin-left: 32.5%;
+	margin-bottom: 20%;
+	padding-top: 3%;
+	padding-bottom: 4%;
 }
 
-.img
+
+section h3:first-child, h3:nth-child(2)
 {
-	width:10%;
-	border-radius:100%;
+	text-transform: uppercase;
+	color: #ff5a00;
+}
+
+@media screen and  (max-width:320px){
+	#team{
+		flex-wrap:wrap;
+				
+	}
+	body
+	{
+		font-size:8px;
+	}
+	.member
+	{
+		width:50%;
+	}
+}
+
+@media screen and (min-width:320px) and (max-width:640px){
+	#team{
+		flex-wrap:wrap;
+				
+	}
+	body
+	{
+		font-size:12px;
+	}
+	.member
+	{
+		width:40%;
+	}
+}
+
+@media screen and (min-width: 640px) and (max-width:1240px){
+	#team{
+		flex-wrap:wrap;
+	}
+	body
+	{
+		font-size:16px;
+	}
+	.member
+	{
+		width:40%;
+	}
 }
