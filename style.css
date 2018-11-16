@@ -1,44 +1,107 @@
-/* skasować!! To tylko przywitanie*/
+:root {
+  --bg: #222222;
+  --main: #ff5a00;
+}
 
-body { 
-background: #f6d1c7;
+#galeria {
+  padding: 20px;
+  background: var(--bg);
+  width: 100%;
 }
-.left { float: left;}
-.right { float: right;}
-#smile {
-  position: relative;
-  z-index: 0;
-  background-color: yellow;
-  border: 6px solid #222;
-  width: 150px;
-  height: 150px;
-  border-radius: 100px;
-  margin: 50px auto;
-  box-shadow: 2px 2px 1px #B8B8B8;
+
+#galeria h1 {
+  color: var(--main);
+  text-align: center;
+  font-size: 40px;
 }
-.eye {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  border-radius: 100px;
-  background: #222;
-  margin-top: 35px;
-  margin-left: 33px;
+
+#galeria .photos {
+  padding: 10px;
+  display: grid;
+  grid-gap: 30px 30px;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: auto;
+  justify-content: space-around;
 }
-.eye.right { margin-left: 0; margin-right: 33px; }
-.mouth {
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  left: 0;
-  right: 0;
-  height: 110px;
-  width: 115px;
-  margin: 0 auto;
-  border-bottom: 8px solid #222;
-  border-radius: 100%;
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
 }
-h1 {
-color: black;
-text-align: center;
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+#galeria .photos .bear {
+  border: 2px solid #C0C0C0;
+  width: 100%;
+  height: auto;
+}
+
+#galeria .photos .fear {
+  border: 2px solid #C0C0C0;
+  width: 100%;
+  height: auto;
+}
+
+#galeria .photos .dog {
+  border: 2px solid #C0C0C0;
+  width: 100%;
+  height: auto;
+}
+
+#galeria .photos .car {
+  border: 2px solid #C0C0C0;
+  width: 100%;
+  height: auto;
+}
+
+#galeria .photos .cat {
+  border: 2px solid #C0C0C0;
+  width: 100%;
+  height: auto;
+}
+
+#galeria .photos .nice {
+  border: 2px solid #C0C0C0;
+  width: 100%;
+  height: auto;
+}
+
+#galeria .photos .bear:hover {
+  transform: scale(1.2);
+}
+
+#galeria .photos .fear:hover {
+  transform: scale(1.2) rotate(180deg);
+}
+
+#galeria .photos .dog:active {
+  transform: scale(1.2);
+}
+
+#galeria .photos .cat:hover {
+  transform: scale(1.2);
+}
+
+#galeria .photos .car:active {
+  -webkit-animation:spin 3s ease-in-out infinite;
+  -moz-animation:spin 3s ease-in-out infinite;
+  animation:spin 3s ease-in-out infinite;
+}
+
+#galeria .photos .nice:hover {
+  opacity: 0.6;
+  transform: scale(1.2);
 }
