@@ -1,107 +1,84 @@
-:root {
-  --bg: #222222;
-  --main: #ff5a00;
+.container
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.napisz
+{
+	width: 470px;
+	min-height: 500px;
+	background-color: pink;
+	text-align: center;
+	font-family: Berlin Sans FB;
+	padding: 15px;
+	float: left;
+
+}
+.nas
+{
+	text-transform: uppercase;
+	background-color: purple;
+	color: rgb(255, 141, 35);
+	font-size: 24px;
+}
+.adres
+{
+	background-color: blue;
+	min-height: 120px;
+	line-height: 35px;
+	margin-top: 50px;
+	color: white;
+}
+.form
+{
+	width: 470px;
+	min-height: 500px;
+	background-color: green;
+	text-align: center;
+	padding: 15px;
+	float: left;
+
+}
+.map
+{
+	background-color: grey;
+	min-height: 300px;
+	clear: both;
 }
 
-#galeria {
-  padding: 20px;
-  background: var(--bg);
-  width: 100%;
-}
 
-#galeria h1 {
-  color: var(--main);
-  text-align: center;
-  font-size: 40px;
+footer
+{
+	display: flex;
+	justify-content: space-between;
+	min-height: 100px;
+	background-color: yellow;
 }
-
-#galeria .photos {
-  padding: 10px;
-  display: grid;
-  grid-gap: 30px 30px;
-  grid-template-columns: 600px 600px;
-  grid-template-rows: auto;
-  justify-content: space-around;
+.ikony
+{
+	min-height: 30px;
+	background-color: olive;
+	margin-right: 100px;
 }
-
-@-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(360deg);
-  }
+.paula
+{
+	justify-content: space around;
+	min-height: 80px;
+	background-color: lime;
+	margin-left: 100px;
+	color: white;
 }
-
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
+p 
+{
+	float: left;
 }
-
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+.icon-copyright
+{
+	float: left;
 }
-
-#galeria .photos .bear {
-  border: 2px solid #C0C0C0;
-  width: 100%;
-  height: auto;
-}
-
-#galeria .photos .fear {
-  border: 2px solid #C0C0C0;
-  width: 100%;
-  height: auto;
-}
-
-#galeria .photos .dog {
-  border: 2px solid #C0C0C0;
-  width: 100%;
-  height: auto;
-}
-
-#galeria .photos .car {
-  border: 2px solid #C0C0C0;
-  width: 100%;
-  height: auto;
-}
-
-#galeria .photos .cat {
-  border: 2px solid #C0C0C0;
-  width: 100%;
-  height: auto;
-}
-
-#galeria .photos .nice {
-  border: 2px solid #C0C0C0;
-  width: 100%;
-  height: auto;
-}
-
-#galeria .photos .bear:hover {
-  transform: scale(1.2);
-}
-
-#galeria .photos .fear:hover {
-  transform: scale(1.2) rotate(180deg);
-}
-
-#galeria .photos .dog:active {
-  transform: scale(1.2);
-}
-
-#galeria .photos .cat:hover {
-  transform: scale(1.2);
-}
-
-#galeria .photos .car:active {
-  -webkit-animation:spin 3s ease-in-out infinite;
-  -moz-animation:spin 3s ease-in-out infinite;
-  animation:spin 3s ease-in-out infinite;
-}
-
-#galeria .photos .nice:hover {
-  opacity: 0.6;
-  transform: scale(1.2);
+.input
+{
+	margin: 15px;
 }
