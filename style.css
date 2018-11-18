@@ -1,0 +1,96 @@
+body
+{
+	background-color: #000000;
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	width:100%;
+	--main: #ff5a00;
+	--bg: #222222;
+}
+
+.container
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.writeToUs
+{
+	width: 470px;
+	min-height: 500px;
+	background-color: var(--main-bg);
+	text-align: center;
+	font-family: Berlin Sans FB;
+	padding: 15px;
+	float: left;
+
+}
+.write
+{
+	text-transform: uppercase;
+	background-color: var(--main-bg);
+	color: #ff5a00;
+	font-size: 24px;
+}
+.address
+{
+	background-color: var(--main-bg);
+	min-height: 120px;
+	line-height: 35px;
+	margin-top: 50px;
+	color: white;
+}
+.form
+{
+	width: 470px;
+	min-height: 500px;
+	background-color: var(--main-bg);
+	text-align: center;
+	padding: 15px;
+	float: left;
+
+}
+.map
+{
+	background-color: var(--bg);
+	min-height: 300px;
+	clear: both;
+}
+
+
+footer
+{
+	display: flex;
+	justify-content: space-between;
+	min-height: 100px;
+	background-color: var(--bg);
+}
+.icons
+{
+	min-height: 30px;
+	background-color: var(--bg);
+	margin-right: 100px;
+}
+.boss
+{
+	display: flex;
+	min-height: 80px;
+	background-color: var(--bg);
+	margin-left: 100px;
+	color: white;
+}
+p 
+{
+	flex: 1 0 30%;
+}
+.icon-copyright
+{
+	float: left;
+}
+.input
+{
+	margin: 15px;
+	
+}
