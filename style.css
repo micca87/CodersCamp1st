@@ -1,25 +1,32 @@
 :root {
+  --main-font: #ffffff;
+  /*white*/
+  --alt-font: #ff5a00;
+  /*orange*/
+  --main-bg: #000000;
+  /*black*/
   --bg: #222222;
-  --main: #ff5a00;
+  /*gray*/
 }
 
-#galeria {
-  padding: 20px;
-  background: var(--bg);
+#gallery {
+  padding: 1.5%;
+  background: var(--main-bg);
   width: 100%;
 }
 
-#galeria h1 {
-  color: var(--main);
+#gallery h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--alt-font);
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5em;
 }
 
-#galeria .photos {
-  padding: 10px;
+#gallery .photos {
+  padding: 1.5% 12%;
   display: grid;
-  grid-gap: 30px 30px;
-  grid-template-columns: 600px 600px;
+  grid-gap: 5% 5%;
+  grid-template-columns: 30% 30% 30%;
   grid-template-rows: auto;
   justify-content: space-around;
 }
@@ -43,65 +50,321 @@
   }
 }
 
-#galeria .photos .bear {
-  border: 2px solid #C0C0C0;
+@-moz-keyframes bigger {
+  100% {
+    -moz-transform: scale(1.2);
+  }
+}
+
+@-webkit-keyframes bigger {
+  100% {
+    -webkit-transform: scale(1.2);
+  }
+}
+
+@keyframes bigger {
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+#gallery .photos .bear {
   width: 100%;
+  max-width: 350px;
   height: auto;
 }
 
-#galeria .photos .fear {
-  border: 2px solid #C0C0C0;
+#gallery .photos .fear {
   width: 100%;
+  max-width: 350px;
   height: auto;
 }
 
-#galeria .photos .dog {
-  border: 2px solid #C0C0C0;
+#gallery .photos .dog {
   width: 100%;
+  max-width: 350px;
   height: auto;
 }
 
-#galeria .photos .car {
-  border: 2px solid #C0C0C0;
+#gallery .photos .car {
   width: 100%;
+  max-width: 350px;
   height: auto;
 }
 
-#galeria .photos .cat {
-  border: 2px solid #C0C0C0;
+#gallery .photos .cat {
   width: 100%;
+  max-width: 350px;
   height: auto;
 }
 
-#galeria .photos .nice {
-  border: 2px solid #C0C0C0;
+#gallery .photos .nice {
   width: 100%;
+  max-width: 350px;
   height: auto;
 }
 
-#galeria .photos .bear:hover {
-  transform: scale(1.2);
+#gallery .photos .bear:hover {
+  animation:bigger 2s linear;
+  -moz-animation:bigger 2s linear;
+  -webkit-animation:bigger 2s linear;
 }
 
-#galeria .photos .fear:hover {
-  transform: scale(1.2) rotate(180deg);
+#gallery .photos .fear:hover {
+  animation:bigger 2s linear;
+  -moz-animation:bigger 2s linear;
+  -webkit-animation:bigger 2s linear;
 }
 
-#galeria .photos .dog:active {
-  transform: scale(1.2);
+#gallery .photos .dog:active {
+  animation:bigger 2s linear;
+  -moz-animation:bigger 2s linear;
+  -webkit-animation:bigger 2s linear;
 }
 
-#galeria .photos .cat:hover {
-  transform: scale(1.2);
+#gallery .photos .cat:hover {
+  animation:bigger 2s linear;
+  -moz-animation:bigger 2s linear;
+  -webkit-animation:bigger 2s linear;
 }
 
-#galeria .photos .car:active {
-  -webkit-animation:spin 3s ease-in-out infinite;
-  -moz-animation:spin 3s ease-in-out infinite;
-  animation:spin 3s ease-in-out infinite;
+#gallery .photos .car:active {
+  -webkit-animation:spin 3s linear infinite;
+  -moz-animation:spin 3s linear infinite;
+  animation:spin 3s linear infinite;
 }
 
-#galeria .photos .nice:hover {
-  opacity: 0.6;
-  transform: scale(1.2);
+#gallery .photos .nice:hover {
+  opacity: 0.9;
+  animation:bigger 2s linear;
+  -moz-animation:bigger 2s linear;
+  -webkit-animation:bigger 2s linear;
+}
+
+@media (max-width: 320px){
+  #gallery .photos .bear {
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+  }
+
+  #gallery .photos .fear {
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+  }
+
+  #gallery .photos .dog {
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+  }
+
+  #gallery .photos .car {
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+  }
+
+  #gallery .photos .cat {
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+  }
+
+  #gallery .photos .nice {
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  #gallery .photos .bear {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+  }
+
+  #gallery .photos .fear {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+  }
+
+  #gallery .photos .dog {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+  }
+
+  #gallery .photos .car {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+  }
+
+  #gallery .photos .cat {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+  }
+
+  #gallery .photos .nice {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  #gallery .photos .bear {
+    width: 100%;
+    max-width: 144px;
+    height: auto;
+  }
+
+  #gallery .photos .fear {
+    width: 100%;
+    max-width: 144px;
+    height: auto;
+  }
+
+  #gallery .photos .dog {
+    width: 100%;
+    max-width: 144px;
+    height: auto;
+  }
+
+  #gallery .photos .car {
+    width: 100%;
+    max-width: 144px;
+    height: auto;
+  }
+
+  #gallery .photos .cat {
+    width: 100%;
+    max-width: 144px;
+    height: auto;
+  }
+
+  #gallery .photos .nice {
+    width: 100%;
+    max-width: 144px;
+    height: auto;
+  }
+}
+
+@media (min-width: 960px) {
+  #gallery .photos .bear {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+  }
+
+  #gallery .photos .fear {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+  }
+
+  #gallery .photos .dog {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+  }
+
+  #gallery .photos .car {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+  }
+
+  #gallery .photos .cat {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+  }
+
+  #gallery .photos .nice {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1240px) {
+  #gallery .photos .bear {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+
+  #gallery .photos .fear {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+
+  #gallery .photos .dog {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+
+  #gallery .photos .car {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+
+  #gallery .photos .cat {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+
+  #gallery .photos .nice {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1600px) {
+  #gallery .photos .bear {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  #gallery .photos .fear {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  #gallery .photos .dog {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  #gallery .photos .car {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  #gallery .photos .cat {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  #gallery .photos .nice {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
 }
