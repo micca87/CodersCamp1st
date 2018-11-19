@@ -25,7 +25,7 @@
 #gallery .photos {
   padding: 1.5% 12%;
   display: grid;
-  grid-gap: 5% 5%;
+  grid-gap: 2% 2%;
   grid-template-columns: 30% 30% 30%;
   grid-template-rows: auto;
   justify-content: space-around;
@@ -50,82 +50,38 @@
   }
 }
 
-@-moz-keyframes bigger {
-  100% {
-    -moz-transform: scale(1.2);
-  }
-}
-
-@-webkit-keyframes bigger {
-  100% {
-    -webkit-transform: scale(1.2);
-  }
-}
-
-@keyframes bigger {
-  100% {
-    transform: scale(1.2);
-  }
-}
-
-#gallery .photos .bear {
+#gallery .photos div {
+  position: relative;
   width: 100%;
-  max-width: 350px;
+  max-width: 600px;
   height: auto;
 }
 
-#gallery .photos .fear {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
+#gallery .photos img {
+  position: relative;
+  max-width: 100%;
+  object-fit: cover;
+  z-index: 1;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
 }
 
-#gallery .photos .dog {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-}
-
-#gallery .photos .car {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-}
-
-#gallery .photos .cat {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-}
-
-#gallery .photos .nice {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-}
-
-#gallery .photos .bear:hover {
-  animation:bigger 2s linear;
-  -moz-animation:bigger 2s linear;
-  -webkit-animation:bigger 2s linear;
-}
-
-#gallery .photos .fear:hover {
-  animation:bigger 2s linear;
-  -moz-animation:bigger 2s linear;
-  -webkit-animation:bigger 2s linear;
-}
-
-#gallery .photos .dog:active {
-  animation:bigger 2s linear;
-  -moz-animation:bigger 2s linear;
-  -webkit-animation:bigger 2s linear;
-}
-
-#gallery .photos .cat:hover {
-  animation:bigger 2s linear;
-  -moz-animation:bigger 2s linear;
-  -webkit-animation:bigger 2s linear;
+#gallery .photos img:hover {
+  z-index: 10;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.5);
 }
 
 #gallery .photos .car:active {
@@ -135,236 +91,53 @@
 }
 
 #gallery .photos .nice:hover {
-  opacity: 0.9;
-  animation:bigger 2s linear;
-  -moz-animation:bigger 2s linear;
-  -webkit-animation:bigger 2s linear;
+  opacity: 0.95;
 }
 
-@media (max-width: 320px){
-  #gallery .photos .bear {
-    width: 100%;
-    max-width: 60px;
-    height: auto;
-  }
-
-  #gallery .photos .fear {
-    width: 100%;
-    max-width: 60px;
-    height: auto;
-  }
-
-  #gallery .photos .dog {
-    width: 100%;
-    max-width: 60px;
-    height: auto;
-  }
-
-  #gallery .photos .car {
-    width: 100%;
-    max-width: 60px;
-    height: auto;
-  }
-
-  #gallery .photos .cat {
-    width: 100%;
-    max-width: 60px;
-    height: auto;
-  }
-
-  #gallery .photos .nice {
-    width: 100%;
-    max-width: 60px;
-    height: auto;
-  }
-}
-
-@media (min-width: 640px) {
-  #gallery .photos .bear {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-  }
-
-  #gallery .photos .fear {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-  }
-
-  #gallery .photos .dog {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-  }
-
-  #gallery .photos .car {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-  }
-
-  #gallery .photos .cat {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-  }
-
-  #gallery .photos .nice {
+@media only screen and (max-width: 320px) {
+  #gallery .photos div {
     width: 100%;
     max-width: 120px;
     height: auto;
   }
 }
 
-@media (min-width: 768px) {
-  #gallery .photos .bear {
+@media only screen and (min-width: 640px) {
+  #gallery .photos div {
     width: 100%;
-    max-width: 144px;
-    height: auto;
-  }
-
-  #gallery .photos .fear {
-    width: 100%;
-    max-width: 144px;
-    height: auto;
-  }
-
-  #gallery .photos .dog {
-    width: 100%;
-    max-width: 144px;
-    height: auto;
-  }
-
-  #gallery .photos .car {
-    width: 100%;
-    max-width: 144px;
-    height: auto;
-  }
-
-  #gallery .photos .cat {
-    width: 100%;
-    max-width: 144px;
-    height: auto;
-  }
-
-  #gallery .photos .nice {
-    width: 100%;
-    max-width: 144px;
+    max-width: 240px;
     height: auto;
   }
 }
 
-@media (min-width: 960px) {
-  #gallery .photos .bear {
+@media only screen and (min-width: 768px) {
+  #gallery .photos div {
     width: 100%;
-    max-width: 180px;
-    height: auto;
-  }
-
-  #gallery .photos .fear {
-    width: 100%;
-    max-width: 180px;
-    height: auto;
-  }
-
-  #gallery .photos .dog {
-    width: 100%;
-    max-width: 180px;
-    height: auto;
-  }
-
-  #gallery .photos .car {
-    width: 100%;
-    max-width: 180px;
-    height: auto;
-  }
-
-  #gallery .photos .cat {
-    width: 100%;
-    max-width: 180px;
-    height: auto;
-  }
-
-  #gallery .photos .nice {
-    width: 100%;
-    max-width: 180px;
+    max-width: 300px;
     height: auto;
   }
 }
 
-@media (min-width: 1240px) {
-  #gallery .photos .bear {
+@media only screen and (min-width: 960px) {
+  #gallery .photos div {
     width: 100%;
-    max-width: 220px;
-    height: auto;
-  }
-
-  #gallery .photos .fear {
-    width: 100%;
-    max-width: 220px;
-    height: auto;
-  }
-
-  #gallery .photos .dog {
-    width: 100%;
-    max-width: 220px;
-    height: auto;
-  }
-
-  #gallery .photos .car {
-    width: 100%;
-    max-width: 220px;
-    height: auto;
-  }
-
-  #gallery .photos .cat {
-    width: 100%;
-    max-width: 220px;
-    height: auto;
-  }
-
-  #gallery .photos .nice {
-    width: 100%;
-    max-width: 220px;
+    max-width: 360px;
     height: auto;
   }
 }
 
-@media (min-width: 1600px) {
-  #gallery .photos .bear {
+@media only screen and (min-width: 1240px) {
+  #gallery .photos div {
     width: 100%;
-    max-width: 350px;
+    max-width: 440px;
     height: auto;
   }
+}
 
-  #gallery .photos .fear {
+@media only screen and (min-width: 1600px) {
+  #gallery .photos div {
     width: 100%;
-    max-width: 350px;
-    height: auto;
-  }
-
-  #gallery .photos .dog {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-  }
-
-  #gallery .photos .car {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-  }
-
-  #gallery .photos .cat {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-  }
-
-  #gallery .photos .nice {
-    width: 100%;
-    max-width: 350px;
+    max-width: 600px;
     height: auto;
   }
 }
