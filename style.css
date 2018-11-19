@@ -1,6 +1,11 @@
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-
+:root
+{
+	--main-font: #ffffff; /*white*/
+	--alt-font: #ff5a00;/*orange*/
+	--main-bg: #000000;/*black*/
+	--bg: #222222;/*gray*/
+}
 
 * {
     margin: 0;
@@ -14,14 +19,6 @@ html {
     font-size: 24px;
 }
 
-:root
-{
-	--main-font: #ffffff; /*white*/
-	--alt-font: #ff5a00;/*orange*/
-	--main-bg: #000000;/*black*/
-	--bg: #222222;/*gray*/
-}
-
 body
 {
 	background-color: var(--main-bg);
@@ -31,6 +28,8 @@ body
 	width:100%;
 	
 }
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
 
 /* header */
@@ -211,7 +210,67 @@ div h3:first-child, h3:nth-child(2)
 	color: var(--alt-font);
 }
 
+#contact {
+	display : flex;
+	flex-direction: row;
+	width: 100%;
+	
+}
+.contactData {
+	background-color: var(--main-bg: #000000);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 50%;
+	height: auto;
+	padding: 0 15% 0 5%;
+	
+}
+h3 
+{
+	color: var(--alt-font: #ff5a00);
+}
+p {
+	color: var(--main-font: #ffffff);
+}
+.inputContainer {
+	background-color: var(--main-bg: #000000);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 50%;
+	height: auto;	
+}
+.inputContainer > input {
+	margin : 0.5em;
+	width: 50%;
+}
 
+footer {
+	color: var(--main-font: #ffffff);
+	background-color: var(--bg: #222222);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 10%;
+}
+.ContactIcons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+	width 15%;
+	margin-bottom: 2%;
+}
+input[type="text"] {
+	 width: 50%;
+	 margin: 0.5%;
+	 border-bottom-color: var(--main-font: #ffffff);
+}
+input[type="number"] {
+	 width: 50%;
+	  border-bottom-color: var(--main-font: #ffffff);
+}
 
 
 @media only screen and  (max-width:320px){
@@ -257,4 +316,5 @@ div h3:first-child, h3:nth-child(2)
 		width:40%;
 	}
 }
+
 
