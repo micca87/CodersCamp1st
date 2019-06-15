@@ -1,268 +1,44 @@
-:root
-{
-	--main-font: #ffffff; /*white*/
-	--alt-font: #ff5a00;/*orange*/
-	--main-bg: #000000;/*black*/
-	--bg: #222222;/*gray*/
-}
+/* skasować!! To tylko przywitanie*/
 
-body
-{
-	background-color: var(--main-bg);
-	margin: 0;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
-	width:100%;
+body { 
+background: #f6d1c7;
 }
-
-
-header {
-	display: flex;
-	flex-direction: column;
-	height: 5%;
-	
+.left { float: left;}
+.right { float: right;}
+#smile {
+  position: relative;
+  z-index: 0;
+  background-color: yellow;
+  border: 6px solid #222;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  margin: 50px auto;
+  box-shadow: 2px 2px 1px #B8B8B8;
 }
-
-header .nav {
-	flex: 0 1 10vh;
-	justify-content: flex-end;
-	display: flex;
-	flex-direction: row;
-	background-color: var(--main-bg);
-	height:5%;
+.eye {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background: #222;
+  margin-top: 35px;
+  margin-left: 33px;
 }
-
-header .nav .image {
-	flex: 0 1 50%;
-	margin: auto 60px;
+.eye.right { margin-left: 0; margin-right: 33px; }
+.mouth {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 0;
+  right: 0;
+  height: 110px;
+  width: 115px;
+  margin: 0 auto;
+  border-bottom: 8px solid #222;
+  border-radius: 100%;
 }
-
-header .nav .image img {
-	width: 250px;
-}
-
-header .nav .bigScreen {
-	flex: 0 1 50%;
-	justify-content: space-around;
-	display: flex;
-	flex-direction: row;
-	list-style: none;
-	margin-right: 30px;
-}
-
-header .nav .bigScreen li {
-	line-height: 12vh;
-	color: #fff;
-	margin-right: 20px;
-
-}
-
-header .nav .bigScreen li:nth-last-child(3) {
-	margin-left: 25px;
-}
-
-.description{
-	background-color:var(--alt-font);
-	width:100%;
-	justify-content:center;
-	height:600px;
-	margin:0;
-	display:flex;
-
-}
-.description__aboutHeadline{
-	background-color:var(--main-bg);
-	width:50%;
-	height:50%;
-	text-align:left;
-	margin:9% 0;
-	padding: 1%;
-}
-
-.header{
-	width:100%;
-	display:flex;
-	flex-direction:row;
-	background-color: var(--bg);
-}
-
-.header__title, .header__photo{
-	width:50%;
-}
-.header__title{
-	text-align:center;
-	margin:5%;
-	font-size: 40px;
-}
-
-h1,h2,h3 {
-	color: var(--alt-font);
-}
-p {
-	color: var(--main-font);
-}
-.about{
-	margin:0;
-	padding:2%;
-}
-.text{
-	padding: 0 2%;
-}
-
-.gallery{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	grid-column-gap: 15px;
-	grid-row-gap: 15px;
-	margin:5% 0;
-
-}
-
-.gallery__photo1 {
-	grid-area: 1 / 2 / 2 / 3;
-}
-
-.gallery__photo2 {
-	grid-area: 1 / 3 / 2 / 4;
-}
-
-.gallery__photo3 {
-	grid-area: 2 / 2 / 3 / 3;
-}
-
-.gallery__photo4 {
-	grid-area: 2 / 3 / 3 / 4;
-}
-
-.gallery__photo5 {
-	grid-area: 3 / 2 / 4 / 3;
-}
-
-.gallery__photo6 {
-	grid-area: 3 / 3 / 4 / 4;
-}
-
-.team__section-title{
-	width:100%;
-	text-align:center;
-}
-
-.team{
-	height:auto;
-	width:100%;
-	border-radius:5px;
-	display:flex;
-	flex-wrap:wrap;
-	justify-content:space-around;
-}
-
-.team p,
-h3 {
-	padding-top: 5%;
-	padding-bottom: 2%;
-}
-
-.team__member{
-	background-color:var(--bg);
-	width:25%;
-	height:auto;
-	margin-bottom:2%;
-	margin-left: 2%;
-	text-align:center;
-	display:block;
-	transition: transform 300ms ease-in-out;
-	
-	font-size: 1em;
-}
-
-.team__member:hover{
-	transform: scale(1.1);
-}
-
-.team__photo{
-	width:100%;
-	height:auto;
-	
-} 
-
-img{
-	height:auto;
-	width:100%;
-}
-
-.memberlink{
-	color:var(--main-font);
-	font-size:1em;
-	background-color: var(--alt-font);
-	text-decoration:none;
-	display: inline-block;
-	border-radius: 5px;
-	padding:3%;
-	margin-bottom:8%;
-}
-
-.quot{
-	background-color:var(--alt-font);
-	text-align:center;
-	justify-content:center;
-	padding:10% 0;
-	
-}
-
-.quot__photo{
-	height:5%;
-	width:5%;
-	padding:5% 0;
-}
-
-.contact{
-	width:100%;
-	display:flex;
-	padding:6% 0;
-	flex-direction: row;
-	align-content: space-between;
-}
-.contact__details{
-	width:50%;
-	text-align:center;
-}
-.form{
-	width:50%;
-	
-}
-.form__input{
-	width:50%;
-	
-}
-
-.form__text,.form__number{
-	width:100%;
-	background-color:var(--main-bg);
-}
-
-.form__button{
-	width:100%;
-	
-}
-
-.form__text-name, .form__text-email{
-	width:100%;
-	background-color:var(--main-bg);
-}
-
-#map {
-	height: 500px;
-	margin-top: 2% ;
-	margin-bottom:5%;
-}
-
-.footer{
-	background-color:var(--bg);
-	height:50px;
-	display:flex;
-	flex-direction:row;
-	justify-content: space-around;
-	align-items: center;
-	padding:1% 0;
+h1 {
+color: black;
+text-align: center;
 }
